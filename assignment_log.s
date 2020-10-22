@@ -9,7 +9,7 @@ __main  FUNCTION
           VLDR.F32 S2,=0.5;Holding 'x' Value(to converge x<1)
           VLDR.F32 S3,=1;addition faactor
           VLDR.F32 S4,=-1;multiplication factor
-          VLDR.F32 S5,=1 ;i value (i=0)
+          VLDR.F32 S5,=1 ;i value (i=1)
 exp1      CMP R1,R0;Compare 'i' and 'n'
           BGE exp;if i < n goto LOOP
           B stop;else goto stop

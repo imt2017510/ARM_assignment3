@@ -19,7 +19,7 @@ exp1      VMUL.F32 S1,S1,S2;t = t*x
           VDIV.F32 S7,S3,S6;k=1/i+1
           VFMA.F32 S0,S1,S7;sum=sum+(-t*x*i)/(i+1)
           VADD.F32 S5,S5,S3;i=i+1
-          ADD R0,#1
+          SUB R0,#1
           B exp
 stop      B stop  ; stop program
           endfunc

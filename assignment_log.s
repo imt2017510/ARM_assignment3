@@ -10,7 +10,7 @@ __main  FUNCTION
           VLDR.F32 S3,=1;addition faactor
           VLDR.F32 S4,=-1;multiplication factor
           VLDR.F32 S5,=1 ;i value (i=1)
-exp1      CMP R1,R0;Compare 'i' and 'n'
+exp      CMP R1,R0;Compare 'i' and 'n'
           BGE exp1;if i < n goto LOOP
           B stop;else goto stop
 exp1      VMUL.F32 S1,S1,S2;t = t*x
